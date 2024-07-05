@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ pageTitle_home }}{% endblock %}
+
+{% block header %}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block content %}
+<section class="hero-section mb-16">
+    <div class="hero-content border-gray-200 dark:border-gray-600">
+        <h2 class="text-4xl font-bold mb-4">{{ hero_title }}</h2>
+        <p class="text-lg text-gray-600 mb-6 dark:text-gray-300">{{ hero_subtitle }}</p>
+        <a href="#get-started" class="bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600">{{
+            start }}</a>
+    </div>
+    <div class="hero-image">
+        <img src="/static/assets/hero-image.png" alt="Hero Image" loading="lazy">
+    </div>
+</section>
+<section id="features" class="mb-16">
+    <h3 class="text-3xl font-bold text-center mb-8">{{ features_title }}</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-brand-speedtest text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ feature_fast }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ feature_fast_desc }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-puzzle text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ feature_plugin }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ feature_plugin_desc }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-device-desktop text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ feature_frontend }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ feature_frontend_desc }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-network text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ feature_fedrated }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ feature_fedrated_desc }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-heart text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ feature_misskey_compatibility }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ feature_misskey_compatibility_desc }}</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-code text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ feature_oss }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ feature_oss_desc }}</p>
+        </div>
+    </div>
+</section>
+<section id="getting-started" class="mb-16">
+    <h3 class="text-3xl font-bold text-center mb-8">{{ get_started_section_title }}</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-user text-blue-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ user_guide }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ user_guide_desc }}</p>
+            <br>
+            <a href="https://join.hol0.dev/servers"
+                class="bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600">{{ learn_more }}</a>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center dark:bg-gray-800 dark:text-gray-200">
+            <i class="ti ti-settings text-green-500 text-4xl mb-4"></i>
+            <h4 class="text-xl font-bold mb-2">{{ admin_guide }}</h4>
+            <p class="text-gray-600 dark:text-gray-200">{{ admin_guide_desc }}</p>
+            <br>
+            <a href="https://docs.hol0.dev/for-admin/getting-started"
+                class="bg-green-500 text-white px-6 py-3 rounded-full shadow hover:bg-green-600">{{ learn_more }}</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="mb-16">
+    <h3 class="text-3xl font-bold text-center mb-8">{{ contact_title }}</h3>
+    <form class="bg-white p-6 rounded-lg shadow max-w-lg mx-auto dark:bg-gray-800 dark:text-gray-200"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQcfa1i30VsWl7chQeQg3gOfvg0rfkfC0LxOCY2nmiFI_ZQg/formResponse"
+        method="POST">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold mb-2 dark:text-gray-200">{{ name }}</label>
+            <input type="text" id="name" name="entry.1727148364"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
+                required>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2 dark:text-gray-200">{{ email }}</label>
+            <input type="email" id="email" name="entry.1630821352"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
+                required>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2 dark:text-gray-200">{{ message }}</label>
+            <textarea id="message" name="entry.824025672"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200"
+                rows="4" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600">{{
+            send }}</button>
+    </form>
+</section>
+{% endblock %}

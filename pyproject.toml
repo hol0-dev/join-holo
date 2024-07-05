@@ -1,0 +1,18 @@
+[project]
+name = "join.hol0.dev"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "AmaseCocoa", email = "amase.cocoa@gmail.com"},
+]
+dependencies = [
+    "jinja2>=3.1.4",
+    "pyyaml>=6.0.1",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
