@@ -1,5 +1,5 @@
 [project]
-name = "join.hol0.dev"
+name = "hol0.pages.dev"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
