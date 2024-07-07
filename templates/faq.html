@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}FAQ{% endblock %}
+
+{% block content %}
+    <section class="bg-white p-6 rounded-lg shadow-md dark:bg-gray-800 dark:text-gray-200">
+        <h2 class="text-2xl font-bold mb-4">よくある質問</h2>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                Hol0でアカウントを作成するにはどうすればいいですか？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">Hol0はソフトウェアの名前であり、特定のSNSの名前ではありません。サーバーにアカウントを作成する場合は、Hol0サーバーにアクセスし、サインアップページで必要事項を入力してアカウントを作成してください。また、サーバーによっては招待コードが必要な場合や、アカウント作成に承認が必要な場合があります。</p>
+            </div>
+        </div>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                Hol0という名前の由来は何ですか？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">とある日本の小説に関連した名前です。ちなみに、実際はHol0ではなく「Holo」という名称です。</p>
+            </div>
+        </div>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                好きな食べ物は？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">お寿司です🍣</p>
+            </div>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">管理者向け</h3>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                Hol0をセルフホストするにはどうすればいいですか？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4"><a href="https://docs.hol0.dev/getting-started" class="text-blue-600">ドキュメント</a>を参照してください。</p>
+            </div>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">開発者向け</h3>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                カスタムフロントエンドを作成する方法/カスタムフロントエンドのテンプレートは？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">これについては、すぐにドキュメントで明確にします。将来、Vue3 またはその他のテンプレートが提供される可能性は低いです (Hol0FE を Vue3 で書き直さない限り)。</p>
+            </div>
+        </div>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                既存のソフトウェアからフォークしなかった理由
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">これは、他人が書いたコードを理解するのが非常に苦手だからです。また、TypeScript (JavaScript) でコードを記述すると、Pythonで開発するよりも品質が低くなる可能性があります。</p>
+            </div>
+        </div>
+        <h3 class="text-2xl font-bold mb-4">その他の質問</h3>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                Hol0のモバイルアプリはありますか？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">現在はHol0 Project公式のモバイルアプリは存在しません。理由は、開発者が1人のみで、開発ペースが非常に遅く、Hol0BEにはAPIすら実装できていないためです。</p>
+            </div>
+        </div>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                アカウント移行はサポートしていますか？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">現在、ActivityPub経由でのアカウント移行は開発中です :)</p>
+            </div>
+        </div>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                Misskey/Mastodonクライアントは使えますか？
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4">Hol0はMisskeyでもMastodonでもありません。ですが、Misskey API/MiAuthのサポートは将来的に予定しています。</p>
+            </div>
+        </div>
+        <div class="faq-item mb-4">
+            <button class="faq-question w-full text-left py-2 px-4 bg-blue-500 text-white rounded-lg focus:outline-none">
+                脆弱性を見つけました。
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                <p class="py-2 px-4"><a href="https://mailhide.io/e/Asa1jkaP" onclick="popup=window.open('https://mailhide.io/e/Asa1jkaP','mailhidepopup','width=580,height=635'); return false;">s......@hol0.dev</a>にメールを送信してください。</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // FAQのアコーディオン機能
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+{% endblock %}

@@ -1,4 +1,5 @@
 lang: "ja"
+i18n_unimplemented: []
 
 title: "Hol0"
 features_title: "特徴"
@@ -47,3 +48,7 @@ servers_registratable: 登録可否
 servers_languages: 言語
 servers_total_notes: ノート数
 about_more: 詳細を見る
+
+faq_h: よくある質問
+faq: よくある質問
+faq_desc: よくある質問などを確認できます

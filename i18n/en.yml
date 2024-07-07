@@ -1,4 +1,5 @@
 lang: "en"
+i18n_unimplemented: ["faq"]
 
 title: "Hol0"
 features_title: "Features"
@@ -47,3 +48,5 @@ servers_registratable: Registratable
 servers_languages: Languages
 servers_total_notes: Total Notes
 about_more: View Details
+faq: FAQ
+faq_desc: You can check FAQs and more.

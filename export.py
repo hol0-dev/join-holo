@@ -71,8 +71,10 @@ def main():
                 else:
                     output_dir = os.path.join(output_base_dir, locale, template_name)
                 translations["isIndex"] = False
+            translations["templateFileName"] = template_file.replace(".html", "")
             translations["updatedAt"] = datetime.datetime.now(datetime.UTC).strftime('%Y/%m/%d %H:%M:%S (UTC)')
             render(template_file, translations, output_dir)
+    
 if __name__ == '__main__':
     static.copy()
     main()
