@@ -1,0 +1,43 @@
+lang: en
+
+announce:
+  text: Hol0 is currently under development! It is not recommended for use in a production environment!
+  url: null
+
+Hol0_is_a_extensible_and_fast_distributed_social_networking_platform: Hol0 is a extensible and fast distributed social networking platform.
+
+Getting_Started: Getting Started
+
+Documentation: Documentation
+
+Features: Features
+
+Faster: Faster
+Hol0_is_written_using_FastAPI_a_fast_Python_framework_so_it_is_relatively_fast: Hol0 is written using FastAPI, a fast Python framework, so it is relatively fast.
+
+Extensible: Extensible
+Hol0_allows_you_to_create_use_your_own_extensions_and_extend_APIs_etc: Hol0 allows you to create/use your own extensions and extend APIs, etc.
+
+Controllable: Controllable
+Hol0_allows_users_to_build_their_own_servers_This_allows_users_to_have_complete_control_over_their_data_and_content_In_particular_it_allows_users_to_protect_their_privacy_by_severing_ties_with_large_companies_that_seek_to_use_their_data_to_learn_and_sell_AI: Hol0 allows users to build their own servers. This allows users to have complete control over their data and content. In particular, it allows users to protect their privacy by severing ties with large companies that seek to use their data to learn and sell AI.
+
+Federated: Federated
+Hol0_can_communicate_with_software_using_ActivityPub_such_as_Misskey_and_Mastodon: Hol0 can communicate with software using ActivityPub such as Misskey and Mastodon.
+
+Misskey_Compatibility: Misskey Compatibility
+Hol0_is_primarily_focused_on_compatibility_with_Misskey_so_it_supports_displaying_reactions_from_software_such_as_Misskey: Hol0 is primarily focused on compatibility with Misskey, so it supports displaying reactions from software such as Misskey.
+
+Open_Source: Open Source
+Hol0_is_open_source_and_can_be_freely_used_and_modified_by_anyone_under_AGPLv3: Hol0 is open source and can be freely used and modified by anyone under AGPLv3.
+
+Start_using_Hol0: Start using Hol0
+
+For_Users: For Users
+Join_the_Hol0_public_server: Join the Hol0 public server!
+
+Comming_Soon: Comming Soon
+
+For_Admins: For Admins
+Check_out_our_guide_on_how_to_build_a_Hol0_server: Check out our guide on how to build a Hol0 server.
+
+Learn_More: Learn More

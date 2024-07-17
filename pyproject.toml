@@ -1,5 +1,5 @@
 [project]
-name = "hol0.pages.dev"
+name = "Hol0"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
@@ -9,7 +9,7 @@ dependencies = [
     "jinja2>=3.1.4",
     "pyyaml>=6.0.1",
 ]
-requires-python = "==3.12.*"
+requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 

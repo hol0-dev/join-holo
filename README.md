@@ -1,2 +1,2 @@
-# joinHolo
-hero-image is temporary. I will change it soon.
+# Hol0
+Source Code for join.hol0.dev
